@@ -25,7 +25,16 @@
   color: #230146 !important;
 }
 
-  /* FOOTER */
+/* ----------NAVBAR----------- */
+
+/* ----------FOOTER----------- */
+
+div.text-center.p-3{
+  background-color: #601EA2 !important;
+  font-family: 'poppins';
+}
+
+/* ----------FOOTER----------- */
 
  /* Vista cartas*/
  .cartas{
