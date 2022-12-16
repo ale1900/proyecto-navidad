@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
 
-/* NAVBAR */
+/* ----------NAVBAR----------- */
 .navbar-brand {
   background-image: url("img/Logotipo.png");
   background-position: center;
@@ -17,13 +17,36 @@
   }
 }
 
-.navbar-nav li a:hover,
-.navbar-nav li.active a {
-  color: #4ea285 !important;
+.nav-link{
+  font-family: 'poppins';
+  color:#601EA2 !important;
 }
 
-/* NAVBAR */
-/* FOOTER */
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #7263B4 !important;
+}
+
+.navbar-nav li a:after {    
+  background: none repeat scroll 0 0 transparent !important;
+  bottom: 0 !important;
+  content: "" !important;
+  display: block !important;
+  height: 2px !important;
+  left: 50% !important;
+  position: absolute !important;
+  background: #fff !important;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s !important;
+  width: 0 !important;
+}
+.navbar-nav li a:hover:after { 
+  width: 100% !important; 
+  left: 0 !important; 
+}
+
+/* ----------NAVBAR----------- */
+
+/* ----------FOOTER----------- */
 
 .footer {
   display: flex;
@@ -152,9 +175,12 @@
   }
 }
 
-/* FOOTER */
+/* ----------FOOTER----------- */
 
-main {
+
+/* ----------MAIN-VIEW---------- */
+
+.landing-page {
   background: url("img/background-main.png") no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -220,5 +246,153 @@ button a{
   color: #FFF;
 }
 
+button a:hover{
+  color: #FFF;
+}
+
+.landing-page .info button:hover{
+  background-color: #4d0099;
+}
+
+/* ----------MAIN-VIEW---------- */
 
 
+/* ----------CARDS-DROPS----------- */
+
+.container2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("img/background-cards.png") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 25px;
+}
+
+.drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+}
+
+.drop:nth-child(1) {
+  border-radius: 49% 51% 70% 30% / 30% 30% 70% 70%;
+}
+
+.drop:nth-child(2) {
+  border-radius: 49% 51% 41% 59% / 52% 30% 70% 48%;
+}
+
+.drop:nth-child(3) {
+  border-radius: 76% 24% 40% 60% / 40% 69% 31% 60%;
+}
+
+.drop:hover {
+  border-radius: 50%;
+}
+
+.drop::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.drop::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.drop .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding-inline: 50px;
+}
+
+.drop .content h2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--color);
+}
+
+.drop .content a {
+  position: relative;
+  padding: 10px 25px;
+  background: var(--color);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.drop .content a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.drop .content a::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.drop .content a:hover::before {
+  transform: translateX(-50%) translateY(28px);
+  width: 65%;
+}
+
+/* ----------CARDS-DROPS----------- 
+Tablet
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+}
+Ordenador
+@media screen and (min-width: 1200px) {
+*/
