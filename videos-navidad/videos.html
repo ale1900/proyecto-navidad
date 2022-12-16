@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="_videos.css">
+    <link rel="stylesheet" href="../videos-navidad/_videos.css" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -19,6 +19,14 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/af96026185.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Inicio</title>
   </head>
   <body>
@@ -44,7 +52,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-md-auto gap-2">
               <li class="nav-item rounded">
-                <a class="nav-link active" aria-current="page" href="../index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
                   ><i class="bi bi-house-fill me-2"></i>Inicio</a
                 >
               </li>
@@ -79,11 +90,86 @@
       </nav>
     </header>
     <main>
-      <div class="your-class">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
+      <section>
+        <div class="personaje">
+          <div class="nombre">
+            <img src="/img/santa-claus.png" alt="Santa Claus">
+            <h2 >Santa Claus</h2>
+          </div>
+          <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, tenetur ab! Voluptates sit expedita provident perferendis dolorem illum. Minus perferendis velit explicabo saepe amet nesciunt enim voluptatem exercitationem dolores qui!</p>
+          </div>
+        </div>
+       
+        
+        <div class="single-item">
+          <div class="slick-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/0i83SmzdjIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="personaje">
+          <div class="nombre">
+            <img src="/img/reyes-magos.png" alt="Reyes Magos">
+            <h2 >Reyes Magos</h2>
+          </div>
+          <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, tenetur ab! Voluptates sit expedita provident perferendis dolorem illum. Minus perferendis velit explicabo saepe amet nesciunt enim voluptatem exercitationem dolores qui!</p>
+          </div>
+        </div>
+       
+        
+        <div class="single-item">
+          <div class="slick-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/0i83SmzdjIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="personaje">
+          <div class="nombre">
+            <img src="/img/cagatio.png" alt="Cagatió">
+            <h2>Cagatió</h2>
+          </div>
+          <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, tenetur ab! Voluptates sit expedita provident perferendis dolorem illum. Minus perferendis velit explicabo saepe amet nesciunt enim voluptatem exercitationem dolores qui!</p>
+          </div>
+        </div>
+       
+        
+        <div class="single-item">
+          <div class="slick-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/0i83SmzdjIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="personaje">
+          <div class="nombre">
+            <img src="/img/Olentzero.png" alt="Olentzero">
+            <h2 >Olentzero</h2>
+          </div>
+          <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, tenetur ab! Voluptates sit expedita provident perferendis dolorem illum. Minus perferendis velit explicabo saepe amet nesciunt enim voluptatem exercitationem dolores qui!</p>
+          </div>
+        </div>
+       
+        
+        <div class="single-item">
+          <div class="slick-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/0i83SmzdjIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+        </div>
+      </section>
+      
 
     </main>
     <!-- Pie de pagina -->
@@ -158,12 +244,33 @@
         </div>
       </div>
     </footer>
-       <!-- JavaScript Slick -->
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script> 
-   <!-- JavaScript -->
-      <script
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+    $('.single-item').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 3000,
+      speed: 500,
+      arrows: true,
+      prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left"></i></span>',
+      nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right"></i></span>',
+    });
+    </script>
+      
+  
+    <!-- JavaScript -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
