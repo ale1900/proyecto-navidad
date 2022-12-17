@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="_videos.css">
+    <link rel="stylesheet" href="../videos-navidad/_videos.css" />
+    <!--Fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nerko+One&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet">
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -19,18 +24,25 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <title>Inicio</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/af96026185.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Videos</title>
   </head>
   <body>
     <header>
       <!-- Barra de Navegación -->
       <nav
         id="navbar"
-        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        class="navbar navbar-expand-lg navbar-dark bg-light border-bottom fixed-top"
+        style="background-color: #eff0f4 !important"
       >
         <div class="container-fluid">
-          <a id="logo" class="navbar-brand" href="index.html"></a>
-          <button
+          <a id="logo" class="navbar-brand" href="../index.html"></a>
+          <button style="background-color: #601EA2"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -73,86 +85,239 @@
                   ><i class="bi bi-telephone-fill me-2"></i>App</a
                 >
               </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../log-in/log-in.html"
+                  ><i class="fa fa-tree"></i></a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <!-- Pie de pagina -->
-    <footer class="footer">
-      <div class="footer__addr">
-        <h1 class="footer__logo">Something</h1>
-        <h2>Contact</h2>
-        <address>
-          5534 Somewhere In. The World 22193-10212<br />
-          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-        </address>
-      </div>
-      <ul class="footer__nav">
-        <li class="nav__item">
-          <h2 class="nav__title">Media</h2>
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Online</a>
-            </li>
-            <li>
-              <a href="#">Print</a>
-            </li>
-            <li>
-              <a href="#">Alternative Ads</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav__item nav__item--extra">
-          <h2 class="nav__title">Technology</h2>
-          <ul class="nav__ul nav__ul--extra">
-            <li>
-              <a href="#">Hardware Design</a>
-            </li>
-            <li>
-              <a href="#">Software Design</a>
-            </li>
-            <li>
-              <a href="#">Digital Signage</a>
-            </li>
-            <li>
-              <a href="#">Automation</a>
-            </li>
-            <li>
-              <a href="#">Artificial Intelligence</a>
-            </li>
-            <li>
-              <a href="#">IoT</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav__item">
-          <h2 class="nav__title">Legal</h2>
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms of Use</a>
-            </li>
-            <li>
-              <a href="#">Sitemap</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="legal">
-        <p>&copy; 2019 Something. All rights reserved.</p>
-        <div class="legal__links">
-          <span
-            >Made with <span class="heart">♥</span> remotely from Anywhere</span
-          >
+    <main>
+      <!-- Mensajes de Navidad -->
+      <section class="mensaje-navidad">
+        <!-- Santa Claus -->
+        <div class="personaje">
+          <div class="nombre">
+            <img src="/img/santa-claus.png" alt="Santa Claus" />
+            <h2>Mensaje Santa Claus</h2>
+          </div>
+          <div class="descripcion">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Possimus, tenetur ab! Voluptates sit expedita provident
+              perferendis dolorem illum. Minus perferendis velit explicabo saepe
+              amet nesciunt enim voluptatem exercitationem dolores qui!
+            </p>
+          </div>
+        </div>
+<<<<<<< HEAD
+       
+        
+          <div class="mensaje">
+            <img src="/img/Santa-Fondo.png" alt="Familia Claus 2" />
+            <div class="overlay">
+              <p>Familia Claus </p>
+              <div class="iconos-contenedor">
+                <a
+                  href="https://www.youtube.com/watch?v=n0k2C1hXSXY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-film"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+            
+         
+          
+          
+          
+          
+          
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+
+=======
+
+        <div class="mensaje" text-center>
+          <img src="/img/Santa-Fondo.png" alt="Mensaje de Santa CLaus" />
+          <div class="overlay">
+            <p>Mensaje Santa Claus</p>
+            <div class="iconos-contenedor">
+              <a
+                href="https://www.youtube.com/watch?v=n0k2C1hXSXY"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+>>>>>>> ad8c1f12f416bfe7da9c2061c049b8458cfe1b8c
+      </section>
+
+      <!-- Reyes Magos -->
+      <div class="personaje">
+        <div class="nombre">
+          <img src="/img/reyes-magos.png" alt="Mensaje de los Reyes Magos" />
+          <h2> Mensaje Reyes Magos</h2> 
+        </div>
+<<<<<<< HEAD
+       
+        
+        <div class="single-item">
+          </div>
+          <div class="slick-item">1</div>
+          <div class="slick-item">2</div>
+          <div class="slick-item">3</div>
+=======
+        <div class="descripcion">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Possimus, tenetur ab! Voluptates sit expedita provident
+            perferendis dolorem illum. Minus perferendis velit explicabo saepe
+            amet nesciunt enim voluptatem exercitationem dolores qui!
+          </p>
+>>>>>>> ad8c1f12f416bfe7da9c2061c049b8458cfe1b8c
         </div>
       </div>
+
+      <div class="mensaje" text-center>
+        <img src="/img/Fondo-reyes.png" alt="Mensaje de Santa CLaus" />
+        <div class="overlay">
+          <p>Mensaje Santa Claus</p>
+          <div class="iconos-contenedor">
+            <a
+              href="https://www.youtube.com/watch?v=n0k2C1hXSXY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cagatio -->
+      <div class="personaje">
+        <div class="nombre">
+          <img src="/img/cagatio.png" alt="Conoce a Cagatio" />
+          <h2>Conoce a Cagatio</h2>
+        </div>
+        <div class="descripcion">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Possimus, tenetur ab! Voluptates sit expedita provident
+            perferendis dolorem illum. Minus perferendis velit explicabo saepe
+            amet nesciunt enim voluptatem exercitationem dolores qui!
+          </p>
+        </div>
+      </div>
+
+      <div class="mensaje" text-center>
+        <img src="/img/Fondo-cagatió.png" alt="Mensaje Santa CLaus" />
+        <div class="overlay">
+          <p> Santa Claus</p>
+          <div class="iconos-contenedor">
+            <a
+              href="https://www.youtube.com/watch?v=n0k2C1hXSXY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Olentzero-->
+       <div class="personaje">
+        <div class="nombre">
+          <img src="/img/Olentzero.png" alt="Conoce a Olentzero" />
+          <h2>Conoce a Olentzero</h2>
+        </div>
+        <div class="descripcion">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Possimus, tenetur ab! Voluptates sit expedita provident
+            perferendis dolorem illum. Minus perferendis velit explicabo saepe
+            amet nesciunt enim voluptatem exercitationem dolores qui!
+          </p>
+        </div>
+      </div>
+
+      <div class="mensaje" text-center>
+        <img src="/img/Fondo-Olentzero.png" alt="Conoce a Olentzero" />
+        <div class="overlay">
+          <p>Conoce a Olentzero</p>
+          <div class="iconos-contenedor">
+            <a
+              href="https://www.youtube.com/watch?v=n0k2C1hXSXY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+     <!-- Pie de página -->
+     <footer class="bg-light border-top text-center text-white">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.facebook.com/factoriaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://twitter.com/factoriaf5"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.instagram.com/factoria_f5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.linkedin.com/company/factor%C3%ADaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgb(0, 0, 0)">
+        © 2022 Copyright: Christmas is you
+      </div>
     </footer>
-   <!-- JavaScript -->
-      <script
+
+    <!-- JavaScript -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
