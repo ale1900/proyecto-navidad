@@ -64,26 +64,6 @@ h2 {
   margin-top: 10px;
   width: 90%;
   text-align: center;
-<<<<<<< HEAD
- }
-
- /* Video Mensaje */
-
- mensaje {
-  
- }
-
-
-.overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-=======
->>>>>>> ad8c1f12f416bfe7da9c2061c049b8458cfe1b8c
 }
 
 /* Mensaje */
@@ -217,40 +197,7 @@ h2 {
     width: 100%;
     
   }
-<<<<<<< HEAD
-  
-  
-  .personaje .nombre img {
-       width: 250px;
-       border-radius: 50%;
-     }
-  
-     .personaje .descripcion {
-      width: 50%;
-      margin: 0 80px;
-     }
-  
-     .descripcion p {
-      text-align: center;
-      margin-top: 10px;
-      width: 100%;
-     }
-  
-  
-  /* carrusel */
-  .single-item {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .single-item img{
-    width: 100%;
-  
-  }
-  
-=======
    
->>>>>>> ad8c1f12f416bfe7da9c2061c049b8458cfe1b8c
 
 .mensaje {
   display: flex;
