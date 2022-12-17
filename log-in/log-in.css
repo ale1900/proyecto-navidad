@@ -1,39 +1,79 @@
-/* ----------NAVBAR----------- */
-.navbar-brand {
-    background-image: url("../img/Logotipo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 250px;
-    height: 45px;
-    margin-left: 30px;
-  }
-  
-  @media screen and (max-device-width: 640px), screen and (max-width: 640px) {
-    .navbar-brand {
-      width: 180px;
-    }
-  }
-  
-  .nav-link{
-    font-family: 'poppins';
-    color:#601EA2 !important;
-  }
-  
-  .navbar-nav li a:hover,
-  .navbar-nav li.active a {
-    color: #230146 !important;
-  }
-  
-  /* ----------NAVBAR----------- */
-  
-  
-  
-  /* ----------FOOTER----------- */
-  
-  div.text-center.p-3{
-    background-color: #601EA2 !important;
-    font-family: 'poppins';
-  }
-  
-  /* ----------FOOTER----------- */
+
+
+main {
+  font-family: "poppins";
+  background: #eff0f4;
+  color: #601ea2;
+  padding: 50px 40px;
+  height: 100vh;
+}
+
+.contacto {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.contacto h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 900;
+  color: #601ea2;
+}
+
+.contacto * {
+  box-sizing: border-box;
+}
+
+.flex {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.flex li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > li {
+  margin-bottom: 20px;
+}
+
+.flex > li > label {
+  flex: 1 0 100px;
+  max-width: 150px;
+}
+
+.flex > li > label + * {
+  flex: 1 0 200px;
+}
+
+.flex li input,
+.flex li textarea {
+  padding: 15px;
+  font-family: "poppins";
+  border: none;
+}
+
+.flex li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex li button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #601ea2;
+}
