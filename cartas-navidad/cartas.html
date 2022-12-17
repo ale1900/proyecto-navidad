@@ -17,69 +17,45 @@
   <!--titulo-->
   <title>Cartas</title>
 
-  <!--Fuente-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nerko+One&family=Poppins&family=Roboto&display=swap"
-    rel="stylesheet">
-
   <!--Css-->
   <link rel="stylesheet" href="_cartas.css">
 
 </head>
 
-<body class="cartas">
+<body>
   <header>
     <!-- Barra de Navegación -->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-dark bg-light border-bottom fixed-top"
-      style="background-color: #eff0f4 !important"
-    >
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-light border-bottom fixed-top"
+      style="background-color: #eff0f4 !important">
       <div class="container-fluid">
         <a id="logo" class="navbar-brand" href="../index.html"></a>
-        <button style="background-color: #601EA2"
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button style="background-color: #601EA2" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-md-auto gap-2">
             <li class="nav-item rounded">
-              <a class="nav-link active" aria-current="page" href="../index.html"
-                ><i class="bi bi-house-fill me-2"></i>Inicio</a
-              >
+              <a class="nav-link active" aria-current="page" href="../index.html"><i
+                  class="bi bi-house-fill me-2"></i>Inicio</a>
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link" href="../quienes-somos/about.html"
-                ><i class="bi bi-people-fill me-2"></i>Quienes somos</a
-              >
+              <a class="nav-link" href="../quienes-somos/about.html"><i class="bi bi-people-fill me-2"></i>Quienes
+                somos</a>
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link" href="../cartas-navidad/cartas.html"
-                ><i class="bi bi-telephone-fill me-2"></i>Cartas</a
-              >
+              <a class="nav-link" href="../cartas-navidad/cartas.html"><i
+                  class="bi bi-telephone-fill me-2"></i>Cartas</a>
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link" href="../videos-navidad/videos.html"
-                ><i class="bi bi-telephone-fill me-2"></i>Videos</a
-              >
+              <a class="nav-link" href="../videos-navidad/videos.html"><i
+                  class="bi bi-telephone-fill me-2"></i>Videos</a>
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link" href="../contacto/contacto.html"
-                ><i class="bi bi-telephone-fill me-2"></i>Contacto</a
-              >
+              <a class="nav-link" href="../contacto/contacto.html"><i class="bi bi-telephone-fill me-2"></i>Contacto</a>
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link" href="../aplicacion-nino/app.html"
-                ><i class="bi bi-telephone-fill me-2"></i>App</a
-              >
+              <a class="nav-link" href="../aplicacion-nino/app.html"><i class="bi bi-telephone-fill me-2"></i>App</a>
             </li>
             <li class="nav-item rounded">
               <a class="nav-link" href="../log-in/log-in.html"
@@ -92,35 +68,45 @@
     </nav>
   </header>
 
-  <!--Contenido de la vista cartas-->
+  <!--Main-->
   <main>
-    <section id="content-one">
-      <div class="text">
-        <h1>Cartas</h1>
-        <p>Mágicas palabras para mágicas personas</p>
-        <img src="../img/icono-carta.png" class="icons1">
-      </div>
-      <div class="imagen-formato">
-        <img src="../img/formato-carta.png" alt="formato-cartas">
-      </div>
-      <br>  
-    </section>
 
- 
-    <!--carrusel de personajes-->
-    <section id="carrusel-persons">
-      <div class="content-all">
-        <div class="content-carrousel">
-          <figure><img src="../img/reno.png" alt=""></figure>
-          <figure><img src="../img/papa-noel.png" alt=""></figure>
-          <figure><img src="../img/m-nieve.png" alt=""></figure>
-          <figure><img src="../img/carta-person.png" alt=""></figure>
-          <figure><img src="../img/arbol.png" alt=""></figure>
-        </di>
-    </section>
-  </div>
+    <!--Contenido de la vista cartas-->
+    <div class="section-one">
+      <div class="container-one">
 
-  <div>
+        <div class="imagen-formato">
+          <img src="../img/formato-carta.png" alt="formato-cartas">
+        </div>
+
+        <div class="info-text">
+          <h1>
+            Mágicas palabras para <br />
+            mágicas personas
+          </h1>
+          <img src="../img/icono-carta.png" alt="inoco-carta">
+          <p>Escoge tu personaje favorito, el diseño de la carta y personaliza tu mensaje</p>
+          <button><a href="#escoger-personaje">Escoger personaje</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="carrousel-persons">
+        <div class="content-all">
+          <div class="content-carrousel">
+            <figure><img src="../img/reno.png" alt=""></figure>
+            <figure><img src="../img/papa-noel.png" alt=""></figure>
+            <figure><img src="../img/m-nieve.png" alt=""></figure>
+            <figure><img src="../img/carta-person.png" alt=""></figure>
+            <figure><img src="../img/arbol.png" alt=""></figure>
+            </di>
+      </section>
+    </div>
+    </div>
+
+    <!--
+ <div>
     <div class="galeria-noel">
       <div class="noel-img">
         <img src="../img/icon-noel.png" alt="papa-noel">
@@ -140,11 +126,13 @@
         <img src="../img/noel5.png" alt="noel5">
       </div>
     </div>
+  -->
 
 
 
 
-    
+
+
 
 
     <!--<div class="slider-container">
@@ -226,41 +214,17 @@
   <footer class="bg-light border-top text-center text-white">
     <div class="container p-4">
       <section class="mb-4">
-        <a
-          class="btn btn-outline-secondary btn-floating m-1"
-          href="https://www.facebook.com/factoriaf5/"
-          target="_blank"
-          role="button"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a
-          class="btn btn-outline-secondary btn-floating m-1"
-          href="https://twitter.com/factoriaf5"
-          target="_blank"
-          role="button"
-          ><i class="fa fa-twitter"></i
-        ></a>
-        <a
-          class="btn btn-outline-secondary btn-floating m-1"
-          href="https://www.instagram.com/factoria_f5/"
-          target="_blank"
-          role="button"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a
-          class="btn btn-outline-secondary btn-floating m-1"
-          href="https://www.linkedin.com/company/factor%C3%ADaf5/"
-          target="_blank"
-          role="button"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a
-          class="btn btn-outline-secondary btn-floating m-1"
-          href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw"
-          target="_blank"
-          role="button"
-          ><i class="fa fa-youtube"></i
-        ></a>
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.facebook.com/factoriaf5/"
+          target="_blank" role="button"><i class="fa fa-facebook"></i></a>
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://twitter.com/factoriaf5" target="_blank"
+          role="button"><i class="fa fa-twitter"></i></a>
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.instagram.com/factoria_f5/"
+          target="_blank" role="button"><i class="fa fa-instagram"></i></a>
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.linkedin.com/company/factor%C3%ADaf5/"
+          target="_blank" role="button"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-outline-secondary btn-floating m-1"
+          href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw" target="_blank" role="button"><i
+            class="fa fa-youtube"></i></a>
       </section>
     </div>
     <div class="text-center p-3" style="background-color: rgb(0, 0, 0)">
