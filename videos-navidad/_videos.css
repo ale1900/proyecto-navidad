@@ -1,4 +1,3 @@
-
 /* NAVBAR */
 .navbar-brand {
   background-image: url("../img/Logotipo.png");
@@ -10,7 +9,7 @@
   margin-left: 30px;
 }
 
-main{
+main {
   margin-top: 120px;
 }
 
@@ -27,214 +26,198 @@ main{
 
 /* NAVBAR */
 
-
-
 /* CARRUSELES */
-  /* Mobile */
+/* Mobile */
 
-  .personaje {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    flex-direction: column;
-    
-  }
+.personaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+}
 
-  h2 {
-    text-align: center;
-    justify-content: center;
+h2 {
+  text-align: center;
+  justify-content: center;
+}
 
-   
-  }
-   .personaje .nombre img {
-       width: 150px;
-       border-radius: 50%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-     }
+.personaje img{
+  margin-left: 30px;
+}
+.personaje .nombre img {
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .personaje .descripcion {
-    width: 90%;
-    margin: 0 auto;
+.personaje .descripcion {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .descripcion p {
   margin-top: 10px;
   width: 90%;
   text-align: center;
- }
-
-.single-item {
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 30px;
 }
 
-.slick-arrow {
+/* Mensaje */
+
+.mensaje {
+  position: relative;
+  padding-top: 20px;
+}
+
+.mensaje img {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
   position: absolute;
-  top: 33%;
-  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-span.slick-next.slick-arrow {
-  right: -5%;
-}
-
-span.slick-prev.slick-arrow {left: -5%;}
-
-ul.slick-dots {
-  list-style: none;
+.overlay .iconos-contenedor {
   display: flex;
-  justify-content: center;
-  font-size: 0;
+}
+.mensaje:hover img {
+  opacity: 0.2;
 }
 
-ul.slick-dots li button {
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-  border-radius: 50%;
-  margin: 0 10px;
-  border: 1px solid;
+.mensaje:hover .overlay {
+  opacity: 1;
 }
 
-ul.slick-dots li.slick-active button {
-  background: red;
+.overlay i {
+  color: black;
+  font-size: 10px;
+  margin: 10px;
 }
 
 /* Tablet */
 
 @media screen and (min-width: 820px) and (max-width: 1180px) {
-
   .personaje {
-    /* display: flex; */
+   
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* flex-direction: column; */
     
   }
 
-   h2 {
-    text-align: center;
-    justify-content: center;
+  .personaje img {
+    margin-left: 50px;
 
-   
   }
 
-   .personaje .nombre img {
-       width: 150px;
-       border-radius: 50%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-     }
+  h2 {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .personaje .nombre img {
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .personaje .descripcion {
     width: 90%;
     margin: 0 auto;
-}
+  }
 
-.descripcion p {
-  margin-top: 10px;
-  width: 90%;
-  text-align: center;
- }
+  .descripcion p {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+  }
 
-.slick-initialized .slick-slide {
-  display: flex;
-  justify-content: center;
-}
-
-.slick-item iframe{
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 33%;
-  z-index: 2;
-}
-
-span.slick-next.slick-arrow {
-  right: -6%;
-}
-
-span.slick-prev.slick-arrow {left: -5%;}
-
-ul.slick-dots {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  font-size: 0;
-  margin-top: 20px;
-}
-
-ul.slick-dots li button {
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-  border-radius: 50%;
-  margin: 0 10px;
-  border: 1px solid;
-}
-
-ul.slick-dots li.slick-active button {
-  background: red;
-}
 
 }
 
 /* Ordenadores */
 
 @media screen and (min-width: 1200px) {
-  
+
   .personaje {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 80px;
     flex-direction: column;
+  
+  }
+
+  
+
+  .personaje img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+  }
+  .personaje .nombre img {
+    width: 250px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .personaje .descripcion {
+    width: 50%;
+    margin: 0 80px;
+  }
+
+  .descripcion p {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
     
   }
-  
-  
-  .personaje .nombre img {
-       width: 150px;
-       border-radius: 50%;
-     }
-  
-     .personaje .descripcion {
-      width: 50%;
-      margin: 0 80px;
-     }
-  
-     .descripcion p {
-      text-align: center;
-      margin-top: 10px;
-      width: 100%;
-     }
-  
-  
-  /* carrusel */
-  .single-item {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .single-item iframe{
-    width: 100%;
-  
-  }
-  
+   
+
+.mensaje {
+  display: flex;
+  justify-content: center;
 
 }
 
+  .mensaje img {
+    width: 70%;
+  }
 
 
+  .mensaje:hover img {
+    opacity: 0.2;
+  }
+  
+  .mensaje:hover .overlay {
+    opacity: 1;
+  }
+
+ 
+}
 
 /* FOOTER */
 
@@ -248,7 +231,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .footer > * {
-  flex:  1 100%;
+  flex: 1 100%;
 }
 
 .footer__addr {
@@ -257,7 +240,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: 400;
   text-transform: lowercase;
   font-size: 1.5rem;
@@ -309,7 +292,7 @@ ul.slick-dots li.slick-active button {
 
 .footer__nav {
   display: flex;
-    flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .footer__nav > * {
@@ -331,7 +314,7 @@ ul.slick-dots li.slick-active button {
   flex-wrap: wrap;
   color: #999;
 }
-  
+
 .legal__links {
   display: flex;
   align-items: center;
@@ -345,26 +328,22 @@ ul.slick-dots li.slick-active button {
   .legal .legal__links {
     margin-left: auto;
   }
-
-
-
 }
 
 @media screen and (min-width: 40.375em) {
   .footer__nav > * {
     flex: 1;
   }
-  
+
   .nav__item--extra {
     flex-grow: 2;
   }
-  
+
   .footer__addr {
     flex: 1 0px;
   }
-  
+
   .footer__nav {
     flex: 2 0px;
   }
-  
 }
