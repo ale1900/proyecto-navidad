@@ -36,64 +36,88 @@ div.text-center.p-3{
 
 /* ----------FOOTER----------- */
 
- /* Vista cartas*/
- .cartas{
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(45deg, #7F346C , #7263B4);
- }
- 
+ /* Vista del encabezado de cartas*/
 
-/*.caja1 img{
-  width: 50%;  
-  float: right;
-  margin-top: 65px;
-  max-width: 500px;
+ .section-one{
+  background: url("../img/fondo.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ * {
+  box-sizing: border-box;
 }
 
-.caja1 h1{
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-one .imagen-formato{
   width: 50%;
   float: left;
-  padding: 0;
+}
+.section-one .imagen-formato img{
+  max-width: 70%;
+  margin-top: 100px;
+  margin-left: 180px;
+  padding-top: 30px ;
 }
 
-.caja1 p {
-  margin-bottom: 40px;
-    line-height: 25px;
-    float: left;
-} 
+.section-one .info-text{
+  width: 40%;
+  float: left;
+}
 
+.section-one .info-text {
+  width: 40%;
+  float: left;
+  margin-top: 180px;
+  margin-left: 100px;
+}
+
+.section-one .info-text h1 {
+  font-family: 'Kavoon', cursive;
+  font-size: 30px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  color: #35353f;
+}
+
+.section-one .info-text img{
+  height: 10vh;
+}
+
+.section-one .info-text p {
+  font-family: 'poppins';
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #35353F;
+}
+ 
+.section-one .info-text button{
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #601EA2;
+  
+}
+
+.section-one .info-text a{
+  text-decoration: none;
+  color:#FFF
+}
 /*primera seccion de la vista cartas*/
-#content-one{
-  width: 100%;
-}
-#content-one .text{
-  float: right;
-  width: 50%;
-  text-align: center;
-  margin-top: 50px;
-}
-#content-one .text .icons1{
-width: 20%;
-padding-top: 20px;
 
-}
-
-#content-one .imagen-formato{
-  width: 50%;
-  margin: auto 70px;
-  margin-top: 70px;
-  padding: 20px;
-}
-
-#content-one .imagen-formato img{
-  width: 375px;
-  height: 375px;
-}
-/*primera seccion de la vista cartas*/
 
 /* Carrusel de los perfiles para la persolnalizacion de las cartas */
-
+.carrousel
 .content-all{
   width: 210px;
   margin: auto;
