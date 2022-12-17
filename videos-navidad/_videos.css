@@ -66,10 +66,21 @@ main{
   text-align: center;
  }
 
-.single-item {
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+ /* Video Mensaje */
+
+ mensaje {
+  
+ }
+
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .slick-arrow {
@@ -203,7 +214,7 @@ ul.slick-dots li.slick-active button {
   
   
   .personaje .nombre img {
-       width: 150px;
+       width: 250px;
        border-radius: 50%;
      }
   
@@ -225,7 +236,7 @@ ul.slick-dots li.slick-active button {
     margin: 0 auto;
   }
   
-  .single-item iframe{
+  .single-item img{
     width: 100%;
   
   }
