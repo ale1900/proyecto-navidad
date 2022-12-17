@@ -1,30 +1,43 @@
+<<<<<<< HEAD
 /* NAVBAR */
+=======
+
+/* ----------NAVBAR----------- */
+>>>>>>> 9b8388d6199ba28c938606334096de5db5bbe3ef
 .navbar-brand {
   background-image: url("../img/Logotipo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 168px;
-  height: 51px;
+  width: 250px;
+  height: 45px;
   margin-left: 30px;
 }
 
+<<<<<<< HEAD
 main {
   margin-top: 120px;
 }
 
+=======
+>>>>>>> 9b8388d6199ba28c938606334096de5db5bbe3ef
 @media screen and (max-device-width: 640px), screen and (max-width: 640px) {
   .navbar-brand {
-    width: 130px;
+    width: 180px;
   }
+}
+
+.nav-link{
+  font-family: 'poppins';
+  color:#601EA2 !important;
 }
 
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-  color: #4ea285 !important;
+  color: #230146 !important;
 }
 
-/* NAVBAR */
+/* ----------NAVBAR----------- */
 
 /* CARRUSELES */
 /* Mobile */
@@ -219,17 +232,14 @@ h2 {
  
 }
 
-/* FOOTER */
+/* ----------FOOTER----------- */
 
-.footer {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
-  color: #2f2f2f;
-  background-color: #fff;
-  border-top: 1px solid #e5e5e5;
+div.text-center.p-3{
+  background-color: #601EA2 !important;
+  font-family: 'poppins';
 }
 
+<<<<<<< HEAD
 .footer > * {
   flex: 1 100%;
 }
@@ -347,3 +357,6 @@ h2 {
     flex: 2 0px;
   }
 }
+=======
+/* ----------FOOTER----------- */
+>>>>>>> 9b8388d6199ba28c938606334096de5db5bbe3ef
