@@ -12,12 +12,144 @@
 
   main{
     margin-top: 120px;
+    ;
+  }
+  .texto {
+    background-color: #7263B4;
+  }
+  .primero{
+    text-align: center;
+    margin-left: 10px;
+  }
+  .segundo {
+    text-align: center;
+    margin-right: 20px;
+  }
+  .peques {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+  }
+  .gente {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
   }
   
   @media screen and (max-device-width: 640px), screen and (max-width: 640px) {
     .navbar-brand {
       width: 130px;
     }
+    
+    .mision {
+      display: flex;
+      margin-top: 50px;
+  }
+    .texto {
+      background-color: #7263B4;
+    }
+
+    .primero{
+      text-align: center;
+      margin-left: 10px;
+    }
+    .segundo {
+      text-align: center;
+      margin-right: 20px;
+    }
+    .peques {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+  
+    }
+    .gente {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      
+    }
+  }
+  
+  @media screen and (min-width: 820px) and (max-width: 1180px) {
+    
+    .mision {
+      display: flex;
+      flex-direction:row-reverse;
+      margin-top: 50px;
+  }
+  texto {
+    background-color: #7263B4;
+  }
+    .primero{
+      text-align: center;
+      margin-left: 10px;
+    }
+    .segundo {
+      text-align: center;
+      margin-right: 20px;
+    }
+    .peques {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+  
+    }
+    .gente {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+    .mision {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 50px;
+      position: center;
+  }
+    .primero{
+      text-align: center;
+      margin-left: 10px;
+    }
+    .segundo {
+      text-align: center;
+      margin-right: 20px;
+    }
+    .peques {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+  
+    }
+    .gente {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      
+    }
+
   }
   
   .navbar-nav li a:hover,
