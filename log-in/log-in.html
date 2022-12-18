@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="log-in.css">
+    <link rel="stylesheet" href="login.css">
     <!--Fuente-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,9 +86,29 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="contacto">
+        <h1>Ingresa a tu cuenta</h1>
+        <form>
+          <ul class="flex">
+            <li>
+              <label for="first-name">Usuario</label>
+              <input type="text" id="first-name" placeholder="Usuario / Email">
+            </li>
+            <li>
+              <label for="last-name">Contraseña</label>
+              <input type="password" id="last-name" placeholder="Contraseña">
+            </li>
+            <li>
+              <button type="submit">Send</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+    </main>
      <!-- Pie de página -->
-     <footer class="bg-light border-top text-center text-white">
+     <footer class="bg-light border-top text-center text-white fixed-bottom">
       <div class="container p-4">
         <section class="mb-4">
           <a

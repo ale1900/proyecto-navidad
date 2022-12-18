@@ -84,6 +84,7 @@ body {
   margin: 0 0 20px;
   line-height: 1.4;
   color: #35353f;
+  /*text-align: center;*/
 }
 
 .section-one .info-text img{
@@ -116,24 +117,25 @@ body {
 /*primera seccion de la vista cartas*/
 
 
-/* Carrusel de los perfiles para la persolnalizacion de las cartas */
+/*Carrusel de los perfiles para la persolnalizacion de las cartas*/
 .carrousel-persons{
   background-color: #EFF0F4;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .content-all{
-  width: 210px;
+  width: 180px;
   margin: auto;
   perspective: 1000px;
   position: relative;
-  margin-top: 50px;
+  margin-top: auto;
 }
 
 .content-carrousel{
+  margin-top: 50px;
   width: 150%;
   position: absolute;
   animation: rotar 30s infinite linear;
@@ -145,8 +147,8 @@ body {
 }
 
 .content-carrousel figure{
-  width: 100%;
-  height: 120%;
+  width: 65%;
+  height: 20%;
   position: absolute;
   box-shadow: 0px 0px 20px 0px black;
   transition: all 300ms;
@@ -157,12 +159,16 @@ body {
   transition: all 300ms;
 }
 
-.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px)}
-.content-carrousel figure:nth-child(2){transform: rotateY(72deg) translateZ(300px)}
-.content-carrousel figure:nth-child(3){transform: rotateY(144deg) translateZ(300px)}
-.content-carrousel figure:nth-child(4){transform: rotateY(216deg) translateZ(300px)}
-.content-carrousel figure:nth-child(5){transform: rotateY(288deg) translateZ(300px)}
-.content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(300px)}
+.content-carrousel figure:nth-child(1){transform: rotateY(40deg) translateZ(300px)}
+.content-carrousel figure:nth-child(2){transform: rotateY(80deg) translateZ(300px)}
+.content-carrousel figure:nth-child(3){transform: rotateY(120deg) translateZ(300px)}
+.content-carrousel figure:nth-child(4){transform: rotateY(160deg) translateZ(300px)}
+.content-carrousel figure:nth-child(5){transform: rotateY(200deg) translateZ(300px)}
+.content-carrousel figure:nth-child(6){transform: rotateY(240deg) translateZ(300px)}
+.content-carrousel figure:nth-child(7){transform: rotateY(280deg) translateZ(300px)}
+.content-carrousel figure:nth-child(8){transform: rotateY(320deg) translateZ(300px)}
+.content-carrousel figure:nth-child(9){transform: rotateY(360deg) translateZ(300px)}
+
 
 .content-carrousel img{
   width: 100%;
@@ -182,9 +188,59 @@ body {
 }
 /* Carrusel de los perfiles para la persolnalizacion de las cartas */
 
+/*perfil del personaje*/
+.section-three{
+  background-color: #7263B4;
+  background-size: cover;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.section-three .perfil-noel{
+  width: 90%; 
+  height: 80%; 
+  background: #eff0f464;
+  border-radius: 30px;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.perfil-noel .noel-img img{
+ height: 15vh;
+ display:block;
+ margin:auto;
+ padding-top: 5px;
+}
+
+.section-three .nombre h1 {
+  font-family: 'Kavoon', cursive;
+  font-size: 25px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  color: #35353f;
+  text-align: center;
+}
+/*perfil del personaje*/
+
+
 /*Carrusel de cartas*/
-.galeria-noel{
-  width: 50%;
+
+.section-four{
+  background-color: #EFF0F4;
+  background-size: cover;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-noel{
+  width: 90%;
   margin-left: 30px;
 }
 
@@ -193,7 +249,7 @@ body {
   padding: 10px;
 }
 
-.lista-noel img{
+.lista-cartas img{
   width: 100%;
   object-fit: cover;
   width: 300px;
@@ -202,33 +258,470 @@ body {
   display: block;
 }
 
-.lista-noel{
+.lista-cartas{
   display: flex;
   overflow-y: auto;
   margin-top: 20px;
 }
+/*Carrusel de cartas*/
 
-/*Carrusel de cartas
-.slider-container {
-  scroll-snap-type: x mandatory;
-}
 
-.slider-container img {
-  scroll-snap-align: center;
-}
-
-.slider-container{
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+/*Tablet*/
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .section-one{
+    background: url("../img/fondo.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   * {
+    box-sizing: border-box;
   }
   
-  .slider-container img {
-    flex: 0 0 100%;
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .section-one .imagen-formato{
+    width: 50%;
+    float: left;
+  }
+  .section-one .imagen-formato img{
+    max-width: 70%;
+    margin-top: 100px;
+    margin-left: 180px;
+    padding-top: 30px ;
+  }
+  
+  .section-one .info-text{
+    width: 40%;
+    float: left;
+  }
+  
+  .section-one .info-text {
+    width: 40%;
+    float: left;
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  
+  .section-one .info-text h1 {
+    font-family: 'Kavoon', cursive;
+    font-size: 30px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #35353f;
+    /*text-align: center;*/
+  }
+  
+  .section-one .info-text img{
+    height: 10vh;
+  }
+  
+  .section-one .info-text p {
+    font-family: 'poppins';
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #35353F;
+  }
+   
+  .section-one .info-text button{
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #601EA2;
+    
+  }
+  
+  .section-one .info-text a{
+    text-decoration: none;
+    color:#FFF
+  }
+  /*primera seccion de la vista cartas*/
+  
+  
+  /*Carrusel de los perfiles para la persolnalizacion de las cartas*/
+  .carrousel-persons{
+    background-color: #EFF0F4;
+    background-size: cover;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-all{
+    width: 100%;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: auto;
+  }
+  
+  .content-carrousel{
+    margin-top: 10px;
+    width: 50%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+  }
+  
+  .content-carrousel:hover{
+    animation-play-state: paused;
+  }
+  
+  .content-carrousel figure{
+    width: 65%;
+    height: 20%;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+  }
+  
+  .content-carrousel figure:hover{
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+  }
+  
+  .content-carrousel figure:nth-child(1){transform: rotateY(40deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(2){transform: rotateY(80deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(3){transform: rotateY(120deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(4){transform: rotateY(160deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(5){transform: rotateY(200deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(6){transform: rotateY(240deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(7){transform: rotateY(280deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(8){transform: rotateY(320deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(9){transform: rotateY(360deg) translateZ(300px)}
+  
+  
+  .content-carrousel img{
+    width: 100%;
+  }
+  
+  .content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+  }
+  
+  @keyframes rotar {
+    from{
+      transform: rotateY(0deg);
+    } to {
+      transform: rotateY(360deg);
+    }
+  }
+  /* Carrusel de los perfiles para la persolnalizacion de las cartas */
+  
+  /*perfil del personaje*/
+  .section-three{
+    background-color: #7263B4;
+    background-size: cover;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+  
+  .section-three .perfil-noel{
+    width: 90%;
+    height: 80%; 
+    background: #eff0f464;
+    border-radius: 30px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .perfil-noel .noel-img img{
+   height: 15vh;
+   display:block;
+   margin:auto;
+   padding-top: 5px;
+  }
+  
+  .section-three .nombre h1 {
+    font-family: 'Kavoon', cursive;
+    font-size: 25px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #35353f;
+    text-align: center;
+  }
+  /*perfil del personaje*/
+  
+  
+  /*Carrusel de cartas*/
+  
+  .section-four{
+    background-color: #EFF0F4;
+    background-size: cover;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-noel{
+    width: 90%;
+    margin-left: 30px;
+  }
+  
+  
+  .slider-noel{
+    padding: 10px;
+  }
+  
+  .lista-cartas img{
     width: 100%;
     object-fit: cover;
-    scroll-snap-align: center;
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+    display: block;
   }
-  */
+  
+  .lista-cartas{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+}
+
+
+/*Ordenador*/
+@media screen and (min-width: 1200px) {
+  .section-one{
+    background: url("../img/fondo.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .section-one .imagen-formato{
+    width: 50%;
+    float: left;
+  }
+  .section-one .imagen-formato img{
+    max-width: 70%;
+    margin-top: 100px;
+    margin-left: 180px;
+    padding-top: 30px ;
+  }
+  
+  .section-one .info-text{
+    width: 40%;
+    float: left;
+  }
+  
+  .section-one .info-text {
+    width: 40%;
+    float: left;
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  
+  .section-one .info-text h1 {
+    font-family: 'Kavoon', cursive;
+    font-size: 30px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #35353f;
+    /*text-align: center;*/
+  }
+  
+  .section-one .info-text img{
+    height: 10vh;
+  }
+  
+  .section-one .info-text p {
+    font-family: 'poppins';
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #35353F;
+  }
+   
+  .section-one .info-text button{
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #601EA2;
+    
+  }
+  
+  .section-one .info-text a{
+    text-decoration: none;
+    color:#FFF
+  }
+  /*primera seccion de la vista cartas*/
+  
+  
+  /*Carrusel de los perfiles para la persolnalizacion de las cartas*/
+  .carrousel-persons{
+    background-color: #EFF0F4;
+    background-size: cover;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-all{
+    width: 180px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: auto;
+  }
+  
+  .content-carrousel{
+    margin-top: 50px;
+    width: 150%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+  }
+  
+  .content-carrousel:hover{
+    animation-play-state: paused;
+  }
+  
+  .content-carrousel figure{
+    width: 65%;
+    height: 20%;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+  }
+  
+  .content-carrousel figure:hover{
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+  }
+  
+  .content-carrousel figure:nth-child(1){transform: rotateY(40deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(2){transform: rotateY(80deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(3){transform: rotateY(120deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(4){transform: rotateY(160deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(5){transform: rotateY(200deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(6){transform: rotateY(240deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(7){transform: rotateY(280deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(8){transform: rotateY(320deg) translateZ(300px)}
+  .content-carrousel figure:nth-child(9){transform: rotateY(360deg) translateZ(300px)}
+  
+  
+  .content-carrousel img{
+    width: 100%;
+  }
+  
+  .content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+  }
+  
+  @keyframes rotar {
+    from{
+      transform: rotateY(0deg);
+    } to {
+      transform: rotateY(360deg);
+    }
+  }
+  /* Carrusel de los perfiles para la persolnalizacion de las cartas */
+  
+  /*perfil del personaje*/
+  .section-three{
+    background-color: #7263B4;
+    background-size: cover;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+  
+  .section-three .perfil-noel{
+    width: 90%; 
+    height: 80%;
+    background: #eff0f464;
+    border-radius: 30px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .perfil-noel .noel-img img{
+   height: 15vh;
+   display:block;
+   margin:auto;
+   padding-top: 5px;
+  }
+  
+  .section-three .nombre h1 {
+    font-family: 'Kavoon', cursive;
+    font-size: 25px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #35353f;
+    text-align: center;
+  }
+  /*perfil del personaje*/
+  
+  
+  /*Carrusel de cartas*/
+  
+  .section-four{
+    background-color: #EFF0F4;
+    background-size: cover;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-noel{
+    width: 90%;
+    margin-left: 30px;
+  }
+  
+  
+  .slider-noel{
+    padding: 10px;
+  }
+  
+  .lista-cartas img{
+    width: 100%;
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+    display: block;
+  }
+  
+  .lista-cartas{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+}
+/*
