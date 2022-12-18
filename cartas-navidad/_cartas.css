@@ -200,8 +200,8 @@ body {
 }
 
 .section-three .perfil-noel{
-  width: 1250px; 
-  height: 140px; 
+  width: 90%; 
+  height: 80%; 
   background: #eff0f464;
   border-radius: 30px;
   position:relative;
@@ -357,7 +357,7 @@ Tablet
     justify-content: center;
   }
   .content-all{
-    width: 180px;
+    width: 100%;
     margin: auto;
     perspective: 1000px;
     position: relative;
@@ -365,8 +365,8 @@ Tablet
   }
   
   .content-carrousel{
-    margin-top: 50px;
-    width: 150%;
+    margin-top: 10px;
+    width: 50%;
     position: absolute;
     animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
@@ -430,8 +430,8 @@ Tablet
   }
   
   .section-three .perfil-noel{
-    width: 1250px; 
-    height: 140px; 
+    width: 90%;
+    height: 80%; 
     background: #eff0f464;
     border-radius: 30px;
     position:relative;
@@ -494,6 +494,8 @@ Tablet
     margin-top: 20px;
   }
 }
+
+
 Ordenador
 @media screen and (min-width: 1200px) {
   .section-one{
@@ -658,8 +660,8 @@ Ordenador
   }
   
   .section-three .perfil-noel{
-    width: 1250px; 
-    height: 140px; 
+    width: 90%; 
+    height: 80%;
     background: #eff0f464;
     border-radius: 30px;
     position:relative;
