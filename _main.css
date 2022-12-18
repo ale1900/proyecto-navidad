@@ -1,42 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
 
-/* ----------NAVBAR----------- */
-.navbar-brand {
-  background-image: url("img/Logotipo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 250px;
-  height: 45px;
-  margin-left: 30px;
-}
-
-@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
-  .navbar-brand {
-    width: 180px;
-  }
-}
-
-.nav-link{
-  font-family: 'poppins';
-  color:#601EA2 !important;
-}
-
-.navbar-nav li a:hover,
-.navbar-nav li.active a {
-  color: #230146 !important;
-}
-
-/* ----------NAVBAR----------- */
-
-/* ----------FOOTER----------- */
-
-div.text-center.p-3{
-  background-color: #601EA2 !important;
-  font-family: 'poppins';
-}
-
-/* ----------FOOTER----------- */
 
 
 /* ----------MAIN-VIEW---------- */
@@ -231,19 +193,6 @@ button a:hover{
   opacity: 1;
 }
 
-.drop .content a::before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 25%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
 .drop .content a:hover::before {
   transform: translateX(-50%) translateY(28px);
   width: 65%;
@@ -256,3 +205,4 @@ Tablet
 Ordenador
 @media screen and (min-width: 1200px) {
 */
+
