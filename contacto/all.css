@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Kavoon&display=swap";
 /* ----------NAVBAR----------- */
 .navbar-brand {
-  background-image: url("img/Logotipo.png");
+  background-image: url("../img/Logotipo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,4 +34,4 @@ div.text-center.p-3 {
     width: 180px;
   }
 }
-/* ----------FOOTER----------- *//*# sourceMappingURL=login.css.map */
+/* ----------FOOTER----------- *//*# sourceMappingURL=all.css.map */

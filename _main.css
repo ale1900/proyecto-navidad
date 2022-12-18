@@ -1,11 +1,11 @@
 
-
-
 /* ----------MAIN-VIEW---------- */
 
 
+
 .landing-page {
-  background: url("img/background-main.png") no-repeat center;
+  background: url("img/background-mains.png") no-repeat center;
+  background-color: #6B5DA8;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -76,6 +76,31 @@ button a:hover{
 
 .landing-page .info button:hover{
   background-color: #4d0099;
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-page .info {
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .landing-page .image img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .landing-page{
+    background-image: none;
+  }
+  
+  .landing-page .info {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .landing-page .image {
+    display: none;
+  }
 }
 
 /* ----------MAIN-VIEW---------- */
