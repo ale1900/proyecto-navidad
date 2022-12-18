@@ -31,6 +31,13 @@
 /* CARRUSELES */
 /* Mobile */
 
+
+.titulo {
+  color:black;
+  font-size: 25px;
+  margin-top: 80px;
+  text-align: center;
+}
 .personaje {
   display: flex;
   align-items: center;
@@ -42,6 +49,7 @@
 h2 {
   text-align: center;
   justify-content: center;
+  font-size: 10px;
 }
 
 .personaje img{
@@ -49,6 +57,7 @@ h2 {
 }
 .personaje .nombre img {
   width: 150px;
+  height: 70%;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -119,7 +128,14 @@ h2 {
 /* Tablet */
 
 @media screen and (min-width: 820px) and (max-width: 1180px) {
+  
+  .titulo {
+    color:black;
+    font-size: 25px;
+    margin-top: 50px;
+  }
   .personaje {
+    margin-top:50px;
    
     align-items: center;
     justify-content: center;
@@ -172,8 +188,6 @@ h2 {
   
   }
 
-  
-
   .personaje img{
     align-items: center;
     justify-content: center;
@@ -199,14 +213,14 @@ h2 {
   }
    
 
-.mensaje {
+  .mensaje { 
   display: flex;
   justify-content: center;
 
-}
+  }
 
   .mensaje img {
-    width: 70%;
+    width: 65%;
   }
 
 
@@ -216,6 +230,16 @@ h2 {
   
   .mensaje:hover .overlay {
     opacity: 1;
+  }
+
+  .overlay p {
+    font-size: 50px;
+  }
+
+  .iconos-contenedor i{
+    font-size: 50px;
+    margin-left: 230px;
+   
   }
 
  
