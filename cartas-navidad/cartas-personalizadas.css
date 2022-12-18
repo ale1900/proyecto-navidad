@@ -34,4 +34,7 @@ div.text-center.p-3 {
     width: 180px;
   }
 }
-/* ----------FOOTER----------- *//*# sourceMappingURL=login.css.map */
+/* ----------FOOTER----------- */
+.navbar-brand {
+  background-image: url("../img/Logotipo.png");
+}/*# sourceMappingURL=cartas-personalizadas.css.map */
