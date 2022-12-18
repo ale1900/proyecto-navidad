@@ -266,7 +266,7 @@ body {
 /*Carrusel de cartas*/
 
 
-Tablet
+/*Tablet*/
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .section-one{
     background: url("../img/fondo.png") no-repeat center;
@@ -496,7 +496,7 @@ Tablet
 }
 
 
-Ordenador
+/*Ordenador*/
 @media screen and (min-width: 1200px) {
   .section-one{
     background: url("../img/fondo.png") no-repeat center;
