@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Kavoon&display=swap";
+/* ----------NAVBAR----------- */
+.navbar-brand {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-family: "poppins";
+  color: #601ea2 !important;
+}
+
+.navbar-nav li a:hover {
+  color: #230146 !important;
+}
+.navbar-nav li.active a {
+  color: #230146 !important;
+}
+
+/* ----------NAVBAR----------- */
+/* ----------FOOTER----------- */
+div.text-center.p-3 {
+  background-color: #601ea2 !important;
+  font-family: "poppins";
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .navbar-brand {
+    width: 180px;
+  }
+}
+/* ----------FOOTER----------- */
+.navbar-brand {
+  background-image: url("../img/Logotipo.png");
+}/*# sourceMappingURL=us.css.map */
