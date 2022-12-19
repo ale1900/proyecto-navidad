@@ -562,12 +562,11 @@ height: 10vh;
   }
   
   .content-carrousel{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 150%;
     position: absolute;
     animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
-    z-index: none;
   }
   
   .content-carrousel:hover{
