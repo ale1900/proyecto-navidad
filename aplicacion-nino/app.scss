@@ -1,0 +1,71 @@
+@use "../style.scss";
+/* ----------MAIN-VIEW---------- */
+
+.navbar-brand {
+  background-image: url("../img/Logotipo.png");
+}
+
+.landing-page {
+  background: url("../img/background-app.png") no-repeat center;
+  background-color: #6b5da8;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .info {
+    width: 40%;
+    float: left;
+    margin-top: 90px;
+    margin-left: 110px;
+    h1 {
+      font-family: "Kavoon", cursive;
+      font-size: 44px;
+      margin: 0 0 20px;
+      line-height: 1.4;
+      color: #35353f;
+    }
+    p {
+      font-family: "poppins";
+      margin: 0;
+      line-height: 1.6;
+      font-size: 15px;
+      color: #35353f;
+    }
+    button {
+      margin-top: 10px;
+      padding: 0;
+      border: none;
+      background: none;
+      &:hover {
+        background-color: #4d0099;
+      }
+    }
+  }
+  .image {
+    width: 50%;
+    float: right;
+    img {
+      max-width: 80%;
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+button {
+  a {
+    font-family: "poppins";
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+/* ----------MAIN-VIEW---------- */
