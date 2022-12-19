@@ -1,0 +1,40 @@
+@import "https://fonts.googleapis.com/css2?family=Kavoon&display=swap";
+/* ----------NAVBAR----------- */
+.navbar-brand {
+  background-image: url("img/Logotipo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-family: "poppins";
+  color: #601EA2 !important;
+}
+
+.navbar-nav li a:hover {
+  color: #230146 !important;
+}
+.navbar-nav li.active a {
+  color: #230146 !important;
+}
+
+/* ----------NAVBAR----------- */
+/* ----------FOOTER----------- */
+div.text-center.p-3 {
+  background-color: #601EA2 !important;
+  font-family: "poppins";
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .navbar-brand {
+    width: 180px;
+  }
+}
+/* ----------FOOTER----------- */
+.navbar-brand {
+  background-image: url("../img/Logotipo.png");
+}/*# sourceMappingURL=cartas-personalizadas.css.map */
