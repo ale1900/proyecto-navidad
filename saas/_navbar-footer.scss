@@ -1,8 +1,10 @@
+<<<<<<< HEAD:cartas-navidad/cartas-personalizadas.css
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "https://fonts.googleapis.com/css2?family=Kavoon&display=swap";
-$primary-font: "poppins";
-$primary-color: #601ea2;
+=======
+@import "variables";
 
+>>>>>>> 7d4de5af26a6c99cced1b91359e59b616c1ce7cd:saas/_navbar-footer.scss
 /* ----------NAVBAR----------- */
 .navbar-brand {
   background-position: center;
@@ -13,8 +15,13 @@ $primary-color: #601ea2;
   margin-left: 30px;
 }
 .nav-link {
+<<<<<<< HEAD:cartas-navidad/cartas-personalizadas.css
+  font-family: "poppins";
+  color: #601ea2 !important;
+=======
   font-family: $primary-font;
   color: $primary-color !important;
+>>>>>>> 7d4de5af26a6c99cced1b91359e59b616c1ce7cd:saas/_navbar-footer.scss
 }
 .navbar-nav {
   li {
@@ -34,8 +41,13 @@ $primary-color: #601ea2;
 
 /* ----------FOOTER----------- */
 div.text-center.p-3 {
+<<<<<<< HEAD:cartas-navidad/cartas-personalizadas.css
+  background-color: #601ea2 !important;
+  font-family: "poppins";
+=======
   background-color: $primary-color !important;
   font-family: $primary-font;
+>>>>>>> 7d4de5af26a6c99cced1b91359e59b616c1ce7cd:saas/_navbar-footer.scss
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .navbar-brand {

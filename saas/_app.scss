@@ -1,12 +1,9 @@
-@use "../style.scss";
+@import "variables";
+
 /* ----------MAIN-VIEW---------- */
 
-.navbar-brand {
-  background-image: url("../img/Logotipo.png");
-}
-
-.landing-page {
-  background: url("../img/background-app.png") no-repeat center;
+.landing-app {
+  background: url("img/background-app.png") no-repeat center;
   background-color: #6b5da8;
   background-size: cover;
   height: 100vh;
@@ -66,6 +63,33 @@ button {
       color: #fff;
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+	.landing-app {
+		.info {
+			margin-left: 0px;
+			margin-top: 100px;
+		}
+		.image {
+			img {
+				max-width: 90%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 820px) {
+	.landing-app {
+		background-image: url(img/background-main-mobile.png);
+		.info {
+			width: 100%;
+			margin-top: 50px;
+			margin-left: 20px;
+		}
+		.image {
+			display: none;
+		}
+	}
 }
 
 /* ----------MAIN-VIEW---------- */

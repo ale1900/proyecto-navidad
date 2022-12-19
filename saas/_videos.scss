@@ -1,12 +1,4 @@
-@use "../style.scss";
-
-.navbar-brand {
-  background-image: url("../img/Logotipo.png");
-}
-
-$primary-font: 'poppins';
-$primary-color: #601EA2;
-$color-text: #000;
+@import "variables";
 
 /* Mobile */
 //   Mensajes de Navidad 

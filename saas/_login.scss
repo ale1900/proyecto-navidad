@@ -1,13 +1,7 @@
-@use "../style.scss";
-$primary-font: "poppins";
-$primary-color: #601ea2;
-
-.navbar-brand {
-	background-image: url("../img/Logotipo.png");
-}
+@import "variables";
 
 
-main {
+#main {
 	font-family: $primary-font;
 	background: #eff0f4;
 	color: $primary-color;
