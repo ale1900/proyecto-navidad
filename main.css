@@ -18,7 +18,6 @@
 @import "https://fonts.googleapis.com/css2?family=Kavoon&display=swap";
 /* ----------NAVBAR----------- */
 .navbar-brand {
-  background-image: url("img/Logotipo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -289,6 +288,7 @@ Ordenador
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
 }
 .personaje img {
   margin-left: 20px;
@@ -314,17 +314,20 @@ Ordenador
   padding: 20px;
   border-radius: 10px;
   display: block;
-  transition: all 0.2s ease;
-  cursor: default;
+}
+.mensaje .titulo {
+  position: absolute;
+  width: 32%;
+  left: 18%;
+  top: 31%;
+  font-size: 11px;
+  font-weight: 800;
 }
 .mensaje .overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 60%;
+  left: 27%;
 }
 .mensaje .overlay p {
   font-size: 20px;
@@ -333,17 +336,23 @@ Ordenador
 }
 .mensaje .overlay .iconos-contenedor {
   display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background: #7263b4;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 6px;
+  align-items: center;
 }
 .mensaje .overlay i {
-  color: black;
-  font-size: 10px;
-  margin: 10px;
+  color: #fff;
+  font-size: 8px;
+  margin-left: 7px;
 }
-.mensaje:hover img {
-  opacity: 0.2;
-}
-.mensaje:hover .overlay {
-  opacity: 1;
+.mensaje .overlay p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 /* Tablet */
@@ -361,6 +370,7 @@ Ordenador
   }
   .personaje img {
     margin-left: 105px;
+    opacity: 1;
   }
   .personaje .nombre h2 {
     text-align: center;
@@ -383,6 +393,39 @@ Ordenador
     margin-top: 10px;
     width: 90%;
     text-align: center;
+  }
+  .mensaje {
+    display: flex;
+    justify-content: center;
+  }
+  .mensaje img {
+    width: 100%;
+  }
+  .mensaje p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mensaje:hover img {
+    opacity: 1;
+  }
+  .mensaje .titulo {
+    top: 32%;
+    font-size: 20px;
+  }
+  .mensaje .overlay {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  .mensaje .overlay p {
+    font-size: 25px;
+  }
+  .mensaje .overlay .iconos-contenedor {
+    padding: 10px 20px;
+  }
+  .mensaje .overlay .iconos-contenedor i {
+    font-size: 20px;
   }
 }
 /* Ordenadores */
@@ -427,18 +470,43 @@ Ordenador
   .mensaje img {
     width: 65%;
   }
+  .mensaje .titulo {
+    width: 20%;
+    left: 28%;
+    top: 28%;
+    font-size: 33px;
+  }
   .mensaje:hover img {
+    opacity: 0.2;
+  }
+  .mensaje:hover .titulo {
     opacity: 0.2;
   }
   .mensaje:hover .overlay {
     opacity: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
-  .mensaje .overlay p {
+  .mensaje:hover .overlay .iconos-contenedor {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 100px;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+    background: transparent;
+  }
+  .mensaje:hover .overlay .iconos-contenedor i {
+    font-size: 50px;
+    color: #000;
+  }
+  .mensaje:hover .overlay .iconos-contenedor p {
     font-size: 50px;
   }
-  .mensaje .iconos-contenedor i {
-    font-size: 50px;
-    margin-left: 230px;
+  .mensaje .overlay {
+    opacity: 0;
   }
 }
 #main {
