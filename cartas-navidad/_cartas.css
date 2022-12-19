@@ -1,47 +1,9 @@
-/* ----------NAVBAR----------- */
-.navbar-brand {
-  background-image: url("../img/Logotipo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 250px;
-  height: 45px;
-  margin-left: 30px;
-}
-
-@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
-  .navbar-brand {
-    width: 180px;
-  }
-}
-
-.nav-link{
-  font-family: 'poppins';
-  color:#601EA2 !important;
-}
-
-.navbar-nav li a:hover,
-.navbar-nav li.active a {
-  color: #230146 !important;
-}
-
-/* ----------NAVBAR----------- */
-
-/* ----------FOOTER----------- */
-
-div.text-center.p-3{
-  background-color: #601EA2 !important;
-  font-family: 'poppins';
-}
-
-/* ----------FOOTER----------- */
-
- /* Vista del encabezado de cartas*/
+/* Vista del encabezado de cartas*/
 
  .section-one{
-  background: url("../img/fondo.png") no-repeat center;
+  background: url("../img/fonfo-movin.png") no-repeat center;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,39 +18,38 @@ body {
 }
 
 .section-one .imagen-formato{
-  width: 50%;
-  float: left;
+  width: 100%;
 }
 .section-one .imagen-formato img{
-  max-width: 70%;
-  margin-top: 100px;
-  margin-left: 180px;
-  padding-top: 30px ;
-}
+width: 80%;
+display:block;
+padding-top: 80px;
+padding-left: 90px;
 
-.section-one .info-text{
-  width: 40%;
-  float: left;
 }
 
 .section-one .info-text {
-  width: 40%;
-  float: left;
-  margin-top: 180px;
-  margin-left: 100px;
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 90px;
+  justify-content: center;
 }
 
 .section-one .info-text h1 {
   font-family: 'Kavoon', cursive;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 0 20px;
   line-height: 1.4;
   color: #35353f;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 .section-one .info-text img{
-  height: 10vh;
+height: 10vh;
+ display:block;
+ margin:auto;
+ padding-top: 5px;
+ justify-content: center;
 }
 
 .section-one .info-text p {
@@ -97,6 +58,7 @@ body {
   line-height: 1.6;
   font-size: 15px;
   color: #35353F;
+  text-align: center;
 }
  
 .section-one .info-text button{
@@ -104,10 +66,10 @@ body {
   border-radius: 10px;
   padding: 12px 30px;
   margin-top: 30px;
+  margin-left: 20px;
   cursor: pointer;
   color: #FFF;
   background-color: #601EA2;
-  
 }
 
 .section-one .info-text a{
@@ -121,13 +83,13 @@ body {
 .carrousel-persons{
   background-color: #EFF0F4;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .content-all{
-  width: 180px;
+  width: 100%;
   margin: auto;
   perspective: 1000px;
   position: relative;
@@ -135,11 +97,13 @@ body {
 }
 
 .content-carrousel{
-  margin-top: 50px;
-  width: 150%;
+  margin-top: 20px;
+  padding-top: 60px;
+  width: 10%;
   position: absolute;
   animation: rotar 30s infinite linear;
   transform-style: preserve-3d;
+  z-index: none;
 }
 
 .content-carrousel:hover{
@@ -239,14 +203,11 @@ body {
   justify-content: center;
 }
 
-.slider-noel{
+.slider{
   width: 90%;
-  margin-left: 30px;
-}
-
-
-.slider-noel{
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden
 }
 
 .lista-cartas img{
@@ -256,16 +217,23 @@ body {
   height: 400px;
   margin-right: 10px;
   display: block;
+  scroll-behavior: smooth;
+  margin-top: 30px;
 }
 
+.lista-cartas img:hover{
+  filter: opacity(.5);
+}
 .lista-cartas{
   display: flex;
   overflow-y: auto;
-  margin-top: 20px;
+  margin-left: 100px;
+  overflow: hidden;
+
 }
 /*Carrusel de cartas*/
 
-
+/*
 /*Tablet*/
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .section-one{
@@ -290,22 +258,22 @@ body {
     float: left;
   }
   .section-one .imagen-formato img{
-    max-width: 70%;
+    max-width: 80%;
     margin-top: 100px;
-    margin-left: 180px;
-    padding-top: 30px ;
+    margin-left: 120px;
+    padding-top: 130px ;
   }
   
   .section-one .info-text{
     width: 40%;
-    float: left;
+    float: right;
   }
   
   .section-one .info-text {
-    width: 40%;
+    width: 35%;
     float: left;
-    margin-top: 180px;
-    margin-left: 100px;
+    margin-top: 260px;
+    margin-left: 10px;
   }
   
   .section-one .info-text h1 {
@@ -321,7 +289,7 @@ body {
     height: 10vh;
   }
   
-  .section-one .info-text p {
+  .section-one .info-text p{
     font-family: 'poppins';
     margin: 0;
     line-height: 1.6;
@@ -332,12 +300,12 @@ body {
   .section-one .info-text button{
     border: 0;
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 12px 10px;
     margin-top: 30px;
     cursor: pointer;
     color: #FFF;
     background-color: #601EA2;
-    
+    margin-left: 130px;
   }
   
   .section-one .info-text a{
@@ -370,6 +338,7 @@ body {
     position: absolute;
     animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
+    z-index: none;
   }
   
   .content-carrousel:hover{
@@ -495,9 +464,8 @@ body {
   }
 }
 
-
-/*Ordenador*/
-@media screen and (min-width: 1200px) {
+/*ordenador*/
+@media screen and (min-width: 1200px){
   .section-one{
     background: url("../img/fondo.png") no-repeat center;
     background-size: cover;
@@ -520,22 +488,22 @@ body {
     float: left;
   }
   .section-one .imagen-formato img{
-    max-width: 70%;
+    max-width: 80%;
     margin-top: 100px;
-    margin-left: 180px;
+    margin-left: 150px;
     padding-top: 30px ;
   }
   
   .section-one .info-text{
     width: 40%;
-    float: left;
+    float: right;
   }
   
   .section-one .info-text {
-    width: 40%;
+    width: 35%;
     float: left;
     margin-top: 180px;
-    margin-left: 100px;
+    margin-left: 10px;
   }
   
   .section-one .info-text h1 {
@@ -551,7 +519,7 @@ body {
     height: 10vh;
   }
   
-  .section-one .info-text p {
+  .section-one .info-text p{
     font-family: 'poppins';
     margin: 0;
     line-height: 1.6;
@@ -562,12 +530,12 @@ body {
   .section-one .info-text button{
     border: 0;
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 12px 10px;
     margin-top: 30px;
     cursor: pointer;
     color: #FFF;
     background-color: #601EA2;
-    
+    margin-left: 155px;
   }
   
   .section-one .info-text a{
@@ -600,6 +568,7 @@ body {
     position: absolute;
     animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
+    z-index: none;
   }
   
   .content-carrousel:hover{
@@ -724,4 +693,3 @@ body {
     margin-top: 20px;
   }
 }
-/*
