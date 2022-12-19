@@ -216,7 +216,7 @@ button a:hover {
 }
 @media screen and (max-width: 820px) {
   .landing-page {
-    background-image: none;
+    background-image: url(img/background-main-mobile.png);
   }
   .landing-page .info {
     width: 100%;
