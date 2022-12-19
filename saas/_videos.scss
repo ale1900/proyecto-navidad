@@ -57,45 +57,49 @@
 		padding: 20px;
 		border-radius: 10px;
 		display: block;
-		transition: all 0.2s ease;
-		cursor: default;
-		
+	}
+	.titulo {
+		position: absolute;
+		width: 32%;
+		left: 18%;
+		top: 31%;
+		font-size: 11px;
+		font-weight: 800;
+
 	}
 	.overlay {
-		transition: all 0.2s ease;
-		opacity: 0;
+		opacity: 1;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
+		top: 60%;
+		left: 27%;
 		p {
 			font-size: 20px;
 			font-weight: bold;
 			margin-bottom: 0;
 		}
-		
-
 		.iconos-contenedor {
 			display: flex;
 			flex-direction: row;
 			text-decoration: none;
+			background: #7263b4;
+			color: #fff;
+			padding: 5px 9px;
+			border-radius: 6px;
+			align-items: center;
 		}
 		i {
-			color: black;
-			font-size: 10px;
-			margin: 10px;
+			color: #fff;
+			font-size: 8px;
+			margin-left: 7px;
 		}
-	}
-	&:hover {
-		img {
-			opacity: 0.2;
-		}
-		.overlay {
-			opacity: 1;
+		p {
+			font-size: 13px;
+			font-weight: bold;
+			margin-bottom: 0;
 		}
 	}
 }
+
 
 /* Tablet */
 
@@ -141,40 +145,45 @@
 		}
 	}
 
-	  .mensaje {
-    display: flex;
-    justify-content: center;
-    img {
-      width: 65%;
-    }
-    &:hover {
-      img {
-        opacity: 0.2;
-      }
-      .overlay {
-        opacity: 1;
-		display:flex;
-		flex-direction: column;
-		text-decoration: none;
-		
-      }
-    }
-    .overlay {
-      p {
-        font-size: 50px;
-		color: #000;
-		
-      }
-    }
-    .iconos-contenedor {
-		display:flex;
-		flex-direction: column;
-		
-      i {
-        font-size: 50px;
-       
-      }
-    }
+	.mensaje {
+    	display: flex;
+    	justify-content: center;
+		img {
+		width: 100%;
+		}
+		p {
+			font-size: 30px;
+			text-align: center;
+
+		}
+		&:hover {
+		img {
+			opacity: 1;
+		}
+	
+		}
+		.titulo {
+			top: 32%;
+			font-size: 20px;
+		}
+		.overlay {
+			opacity: 1;
+			display:flex;
+			flex-direction: row;
+			text-decoration: none;
+			
+			p {
+				font-size: 25px;	
+			}
+			.iconos-contenedor {
+				padding: 10px 20px;
+				i{
+					font-size: 20px;
+				}
+				
+			}
+		}
+    
   }
 }
 
@@ -217,58 +226,59 @@
 			}
 		}
 	}
-
-	.mensaje {
-		position: relative;
-		padding-top: 20px;
-		img {
-			height: 100%;
-			width: 100%;
-			padding: 20px;
-			border-radius: 10px;
-			display: block;
-			transition: all 0.2s ease;
-			cursor: default;
-			
-		}
-		.overlay {
-			transition: all 0.2s ease;
-			opacity: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			p {
-				font-size: 20px;
-				font-weight: bold;
-				margin-bottom: 0;
-				color: #000;
-			}
-			
 	
-			.iconos-contenedor {
-				display: flex;
-				flex-direction: row;
-				text-decoration: none;
-			}
-			i {
-				color: black;
-				font-size: 10px;
-				margin: 10px;
-			}
+	.mensaje {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 65%;
+		}
+		.titulo {
+			width: 20%;
+			left: 28%;
+			top: 28%;
+			font-size: 33px;
 		}
 		&:hover {
 			img {
 				opacity: 0.2;
 			}
+			.titulo {
+				opacity: 0.2;
+			}
 			.overlay {
 				opacity: 1;
+				transform: translate(-50%, -50%);
+				top:50%;
+				left: 50%;				
+				.iconos-contenedor {
+					display: flex;
+					flex-direction: column;
+					text-decoration: none;
+					font-size: 100px;
+					color: #000;
+					text-decoration: none;
+					align-items: center;
+					background: transparent;
+					i {
+						font-size: 50px;
+						color: #000;
+					}
+					p {
+						font-size: 50px;	
+					}
+				}
 			}
 		}
-	}
+		.overlay {
+			opacity: 0;
 
+		}
+	}
+	
 }
+ 
+
 
 
 
