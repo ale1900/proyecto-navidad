@@ -319,17 +319,20 @@ Ordenador
   padding: 20px;
   border-radius: 10px;
   display: block;
-  transition: all 0.2s ease;
-  cursor: default;
+}
+.mensaje .titulo {
+  position: absolute;
+  width: 32%;
+  left: 18%;
+  top: 31%;
+  font-size: 11px;
+  font-weight: 800;
 }
 .mensaje .overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 60%;
+  left: 27%;
 }
 .mensaje .overlay p {
   font-size: 20px;
@@ -340,17 +343,24 @@ Ordenador
   display: flex;
   flex-direction: row;
   text-decoration: none;
+<<<<<<< HEAD
+=======
+  background: #7263b4;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 6px;
+  align-items: center;
+>>>>>>> aa59b5b1295e6fed272a9142d0096e061f79cdcb
 }
 .mensaje .overlay i {
-  color: black;
-  font-size: 10px;
-  margin: 10px;
+  color: #fff;
+  font-size: 8px;
+  margin-left: 7px;
 }
-.mensaje:hover img {
-  opacity: 0.2;
-}
-.mensaje:hover .overlay {
-  opacity: 1;
+.mensaje .overlay p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 /* Tablet */
@@ -397,6 +407,7 @@ Ordenador
     justify-content: center;
   }
   .mensaje img {
+<<<<<<< HEAD
     width: 65%;
   }
   .mensaje:hover img {
@@ -418,6 +429,35 @@ Ordenador
   }
   .mensaje .iconos-contenedor i {
     font-size: 50px;
+=======
+    width: 100%;
+  }
+  .mensaje p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mensaje:hover img {
+    opacity: 1;
+  }
+  .mensaje .titulo {
+    top: 32%;
+    font-size: 20px;
+  }
+  .mensaje .overlay {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  .mensaje .overlay p {
+    font-size: 25px;
+  }
+  .mensaje .overlay .iconos-contenedor {
+    padding: 10px 20px;
+  }
+  .mensaje .overlay .iconos-contenedor i {
+    font-size: 20px;
+>>>>>>> aa59b5b1295e6fed272a9142d0096e061f79cdcb
   }
 }
 /* Ordenadores */
@@ -493,12 +533,47 @@ Ordenador
     font-size: 10px;
     margin: 10px;
   }
+  .mensaje .titulo {
+    width: 20%;
+    left: 28%;
+    top: 28%;
+    font-size: 33px;
+  }
   .mensaje:hover img {
+    opacity: 0.2;
+  }
+  .mensaje:hover .titulo {
     opacity: 0.2;
   }
   .mensaje:hover .overlay {
     opacity: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
+<<<<<<< HEAD
+=======
+  .mensaje:hover .overlay .iconos-contenedor {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 100px;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+    background: transparent;
+  }
+  .mensaje:hover .overlay .iconos-contenedor i {
+    font-size: 50px;
+    color: #000;
+  }
+  .mensaje:hover .overlay .iconos-contenedor p {
+    font-size: 50px;
+  }
+  .mensaje .overlay {
+    opacity: 0;
+  }
+>>>>>>> aa59b5b1295e6fed272a9142d0096e061f79cdcb
 }
 #main {
   font-family: "poppins";

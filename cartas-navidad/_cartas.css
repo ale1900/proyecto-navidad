@@ -195,7 +195,6 @@ height: 10vh;
 
 
 /*Carrusel de cartas*/
-
 .section-four{
   background-color: #EFF0F4;
   background-size: cover;
@@ -232,7 +231,7 @@ height: 10vh;
 }
 /*Carrusel de cartas*/
 
-/*
+
 /*Tablet*/
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .section-one{
@@ -562,12 +561,11 @@ height: 10vh;
   }
   
   .content-carrousel{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 150%;
     position: absolute;
     animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
-    z-index: none;
   }
   
   .content-carrousel:hover{
@@ -610,7 +608,8 @@ height: 10vh;
   @keyframes rotar {
     from{
       transform: rotateY(0deg);
-    } to {
+    } 
+    to {
       transform: rotateY(360deg);
     }
   }
