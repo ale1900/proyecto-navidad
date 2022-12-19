@@ -138,9 +138,20 @@
       color: #35353F;
     }
      .titulo {
-      font-size: 40px;
+      font-family: 'Kavoon', cursive;
+      font-size: 50px;
+
      }
      
+     .parrafo {
+      font-family: 'Kavoon', cursive;
+      font-size: 30px;
+     }
+
+     .parrafo2 {
+      font-family: 'Kavoon', cursive;
+      font-size: 30px;
+     }
      
   
    
