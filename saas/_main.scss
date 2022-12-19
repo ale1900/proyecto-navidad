@@ -192,6 +192,21 @@ button {
 }
 /* ----------CARDS-DROPS----------- */
 
+.h1-responsive{
+	font-family: $primary-font;
+	font-weight: 600;
+	color: #FFF;
+}
+
+.containers{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #6B5DA8;
+}
+
 /*
 Tablet
 @media screen and (min-width: 820px) and (max-width: 1180px) {
