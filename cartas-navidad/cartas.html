@@ -1,225 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-  <!--Metadatos-->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--titulo-->
+    <title>Cartas</title>
 
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!--Css-->
+    <link rel="stylesheet" href="../main.css">
+    <!--<link rel="stylesheet" href="_cartas.css" />-->
+  </head>
 
-  <!--titulo-->
-  <title>Cartas</title>
-
-  <!--Css-->
-  <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="_cartas.css">
-</head>
-
-<body>
-  <header>
-    <!-- Barra de Navegación -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-light border-bottom fixed-top"
-      style="background-color: #eff0f4 !important">
-      <div class="container-fluid">
-        <a id="logo" class="navbar-brand" href="../index.html"></a>
-        <button style="background-color: #6B5DA8" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-md-auto gap-2">
-            <li class="nav-item rounded">
-              <a class="nav-link active" aria-current="page" href="../index.html"><i
-                  class="bi bi-house-fill me-2"></i>Inicio</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../quienes-somos/about.html"><i class="bi bi-people-fill me-2"></i>Quienes
-                somos</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../cartas-navidad/cartas.html"><i
-                  class="bi bi-telephone-fill me-2"></i>Cartas</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../videos-navidad/videos.html"><i
-                  class="bi bi-telephone-fill me-2"></i>Videos</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../contacto/contacto.html"><i class="bi bi-telephone-fill me-2"></i>Contacto</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../aplicacion-nino/app.html"><i class="bi bi-telephone-fill me-2"></i>App</a>
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link" href="../log-in/log-in.html"><i class="fa fa-tree"></i></a>
-            </li>
-          </ul>
+  <body>
+    <header>
+      <!-- Barra de Navegación -->
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-dark bg-light border-bottom fixed-top"
+        style="background-color: #eff0f4 !important"
+      >
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand" href="../index.html"></a>
+          <button
+            style="background-color: #6b5da8"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  ><i class="bi bi-house-fill me-2"></i>Inicio</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../quienes-somos/about.html"
+                  ><i class="bi bi-people-fill me-2"></i>Quienes somos</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../cartas-navidad/cartas.html"
+                  ><i class="bi bi-telephone-fill me-2"></i>Cartas</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../videos-navidad/videos.html"
+                  ><i class="bi bi-telephone-fill me-2"></i>Videos</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../contacto/contacto.html"
+                  ><i class="bi bi-telephone-fill me-2"></i>Contacto</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../aplicacion-nino/app.html"
+                  ><i class="bi bi-telephone-fill me-2"></i>App</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../log-in/log-in.html"
+                  ><i class="fa fa-tree"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!--Main-->
-  <main>
+    <!--Main-->
+    <main>
+      <!--Contenido de la vista cartas-->
+      <div class="section-one">
+        <div class="container-one">
+          <div class="imagen-formato">
+            <img src="../img/formato-carta.png" alt="formato-cartas" />
+          </div>
 
-    <!--Contenido de la vista cartas-->
-    <div class="section-one">
-      <div class="container-one">
-        <div class="imagen-formato">
-          <img src="../img/formato-carta.png" alt="formato-cartas">
-        </div>
+          <div class="info-text">
+            <h1>Mágicas palabras para mágicas personas</h1>
+            <img src="../img/icono-carta.png" alt="inoco-carta" />
 
-        <div class="info-text">
-          <h1>
-            Mágicas palabras para <br />
-            mágicas personas
-          </h1>
-          <img src="../img/icono-carta.png" alt="inoco-carta">
-          </br>
-          <p>
-            Escoge tu personaje favorito,<br />
-            el diseño de la carta y <br />
-            personaliza tu mensaje</p>
-          <button><a href="#escoger-personaje">Escoger personaje</a></button>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div id="escoger-personaje" class="carrousel-persons">
-        <div class="content-all">
-          <div class="content-carrousel">
-            <figure><img src="../img/reno.png" alt="reno" href="reno"></figure>
-            <figure><img src="../img/papa-noel.png" alt="papa-noel" href="#noel"></figure>
-            <figure><img src="../img/reyes.png" alt="reyes" href="#reyes"></figure>
-            <figure><img src="../img/cagatio-p.png" alt="cagatio" href="#cagatio"></figure>
-            <figure><img src="../img/loren.png" alt="loren" href="#loren"></figure>
-            <figure><img src="../img/m-nieve.png" alt="muneco-nieve" href="reno"></figure>
-            <figure><img src="../img/carta-person.png" alt="carta" href="reno"></figure>
-            <figure><img src="../img/arbol.png" alt="" href="reno"></figure>
-            <figure><img src="../img/regalo.png" alt="regalo" href="reno"></figure>
+            <p>
+              Escoge tu personaje favorito, el diseño de la carta y personaliza
+              tu mensaje
+            </p>
+            <button><a href="#escoger-personaje">Escoger personaje</a></button>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="noel" class="section-three">
-      <div class="perfil-noel">
-        <div class="noel-img">
-          <img src="../img/icon-noel.png" alt="papa-noel">
-        </div>
-        <div class="nombre">
-          <h1>Papá Noel</h1>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section-four">
-      <div class="slider">
-        <div class="lista-cartas">
-          <img src="../img/noel-1.png" alt="noel-1">
-          <img src="../img/noel-2.png" alt="noel-2">
-          <img src="../img/noel-3.png" alt="noel-3">
-          <img src="../img/noel-4.png" alt="noel-4">
-          <img src="../img/noel-5.png" alt="noel-5">
+      <div>
+        <div id="escoger-personaje" class="carrousel-persons">
+          <div class="content-all">
+            <div class="content-carrousel">
+              <figure><img src="../img/reno.png" alt="reno" /></figure>
+              <figure>
+                <img src="../img/papa-noel.png" alt="papa-noel" />
+              </figure>
+              <figure><img src="../img/reyes.png" alt="reyes" /></figure>
+              <figure><img src="../img/cagatio-p.png" alt="cagatio" /></figure>
+              <figure><img src="../img/loren.png" alt="loren" /></figure>
+              <figure>
+                <img src="../img/m-nieve.png" alt="muneco-nieve" />
+              </figure>
+              <figure><img src="../img/carta-person.png" alt="carta" /></figure>
+              <figure><img src="../img/arbol.png" alt="arbol" /></figure>
+              <figure><img src="../img/regalo.png" alt="regalo" /></figure>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section-three">
-      <div class="perfil-noel">
-        <div class="noel-img">
-          <img src="../img/icon-reyes.png" alt="papa-noel">
-        </div>
-        <div class="nombre">
-          <h1>Reyes Magos</h1>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section-four">
-      <div class="slider">
-        <div class="lista-cartas">
-          <img src="../img/reyes-1.png" alt="reyes-1">
-          <img src="../img/reyes-2.png" alt="reyes-2">
-          <img src="../img/reyes-3.png" alt="reyes-3">
-          <img src="../img/reyes-4.png" alt="reyes-4">
-          <img src="../img/reyes-5.png" alt="reyes-5">
+      <div class="section-three">
+        <div class="perfil-noel">
+          <div class="noel-img">
+            <img src="../img/icon-noel.png" alt="papa-noel" />
+          </div>
+          <div class="nombre">
+            <h1>Papá Noel</h1>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section-three">
-      <div class="perfil-noel">
-        <div class="noel-img">
-          <img src="../img/icon-olen.png" alt="papa-noel">
-        </div>
-        <div class="nombre">
-          <h1>Olentzero</h1>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section-four">
-      <div class="slider">
-        <div class="lista-cartas">
-          <img src="../img/olen-1.png" alt="olen-1">
-          <img src="../img/olen-2.png" alt="olen-2">
-          <img src="../img/olen-3.png" alt="olen-3">
-          <img src="../img/olen-4.png" alt="olen-4">
-          <img src="../img/olen-5.png" alt="olen-5">
+      <div class="section-four">
+        <div class="slider">
+          <div class="lista-cartas">
+            <img src="../img/noel-1.png" alt="noel-1" />
+            <img src="../img/noel-2.png" alt="noel-2" />
+            <img src="../img/noel-3.png" alt="noel-3" />
+            <img src="../img/noel-4.png" alt="noel-4" />
+            <img src="../img/noel-5.png" alt="noel-5" />
+          </div>
         </div>
       </div>
-    </div>
-  </main>
 
+      <div class="section-three">
+        <div class="perfil-noel">
+          <div class="noel-img">
+            <img src="../img/icon-reyes.png" alt="papa-noel" />
+          </div>
+          <div class="nombre">
+            <h1>Reyes Magos</h1>
+          </div>
+        </div>
+      </div>
 
-  <!-- Pie de página -->
-  <footer class="bg-light border-top text-center text-white">
-    <div class="container p-4">
-      <section class="mb-4">
-        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.facebook.com/factoriaf5/"
-          target="_blank" role="button"><i class="fa fa-facebook"></i></a>
-        <a class="btn btn-outline-secondary btn-floating m-1" href="https://twitter.com/factoriaf5" target="_blank"
-          role="button"><i class="fa fa-twitter"></i></a>
-        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.instagram.com/factoria_f5/"
-          target="_blank" role="button"><i class="fa fa-instagram"></i></a>
-        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.linkedin.com/company/factor%C3%ADaf5/"
-          target="_blank" role="button"><i class="fa fa-linkedin"></i></a>
-        <a class="btn btn-outline-secondary btn-floating m-1"
-          href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw" target="_blank" role="button"><i
-            class="fa fa-youtube"></i></a>
-      </section>
-    </div>
-    <div class="text-center p-3" style="background-color: rgb(0, 0, 0)">
-      © 2022 Copyright: Christmas is you
-    </div>
-  </footer>
+      <div class="section-four">
+        <div class="slider">
+          <div class="lista-cartas">
+            <img src="../img/reyes-1.png" alt="reyes-1" />
+            <img src="../img/reyes-2.png" alt="reyes-2" />
+            <img src="../img/reyes-3.png" alt="reyes-3" />
+            <img src="../img/reyes-4.png" alt="reyes-4" />
+            <img src="../img/reyes-5.png" alt="reyes-5" />
+          </div>
+        </div>
+      </div>
 
-  <!--JavaScript-->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      <div class="section-three">
+        <div class="perfil-noel">
+          <div class="noel-img">
+            <img src="../img/icon-olen.png" alt="papa-noel" />
+          </div>
+          <div class="nombre">
+            <h1>Olentzero</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-four">
+        <div class="slider">
+          <div class="lista-cartas">
+            <img src="../img/olen-1.png" alt="olen-1" />
+            <img src="../img/olen-2.png" alt="olen-2" />
+            <img src="../img/olen-3.png" alt="olen-3" />
+            <img src="../img/olen-4.png" alt="olen-4" />
+            <img src="../img/olen-5.png" alt="olen-5" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-light border-top text-center text-white">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.facebook.com/factoriaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://twitter.com/factoriaf5"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.instagram.com/factoria_f5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.linkedin.com/company/factor%C3%ADaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgb(0, 0, 0)">
+        © 2022 Copyright: Christmas is you
+      </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
