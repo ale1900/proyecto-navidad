@@ -2,6 +2,9 @@
 
 /* Mobile */
 //   Mensajes de Navidad 
+body{
+	$background-color-light:#eff0f4;	
+}
 
 .personaje {
 	display: flex;
@@ -10,16 +13,19 @@
 	padding: 10px;
 	flex-direction: column;
 	h1 {
-		color: black;
+		$color-text: #000;
 		font-size: 25px;
 		margin-top: 80px;
 		text-align: center;
+		font-family: $primary-font;
 	}
 	.nombre {
 		h2 {
+			$color-text: #000;
 			text-align: center;
 			justify-content: center;
 			font-size: 20px;
+			font-family: $primary-font;
 		}
 		img {
 			width: 150px;
@@ -38,10 +44,12 @@
 		width: 90%;
 		margin: 0 auto;
 		p {
+			$color-text: #000;
 			font-size: 15px;
 			margin-top: 10px;
 			width: 90%;
 			text-align: center;
+			$primary-font: 'poppins';
 		}
 	}
 }
@@ -65,6 +73,8 @@
 		top: 31%;
 		font-size: 11px;
 		font-weight: 800;
+		$primary-font: 'poppins';
+		$color-text: #000;
 
 	}
 	.overlay {
@@ -76,6 +86,8 @@
 			font-size: 20px;
 			font-weight: bold;
 			margin-bottom: 0;
+			$color-text: #000;
+			$primary-font: 'poppins';
 		}
 		.iconos-contenedor {
 			display: flex;
@@ -96,6 +108,8 @@
 			font-size: 13px;
 			font-weight: bold;
 			margin-bottom: 0;
+			$primary-font: 'poppins';
+			$color-text: #000;
 		}
 	}
 }
@@ -111,9 +125,10 @@
 		padding: 10px;
 		
 		h1 {
-			color: black;
+			$color-text: #000;
 			font-size: 40px;
 			margin-top: 50px;
+			$primary-font: 'poppins';
 		}
 		img {
 			margin-left: 105px;
@@ -125,6 +140,8 @@
 				justify-content: center;
 				font-size: 35px;
 				margin-left: 40px;
+				$primary-font: 'poppins';
+				$color-text: #000;
 			}
 			img {
 				width: 150px;
@@ -141,6 +158,9 @@
 				margin-top: 10px;
 				width: 90%;
 				text-align: center;
+				$primary-font: 'poppins';
+				$color-text: #000;
+				font-size: 25px;
 			}
 		}
 	}
@@ -154,6 +174,8 @@
 		p {
 			font-size: 30px;
 			text-align: center;
+			$color-text: #000;
+			$primary-font: 'poppins';
 
 		}
 		&:hover {
@@ -165,6 +187,7 @@
 		.titulo {
 			top: 32%;
 			font-size: 20px;
+			$color-text: #000;
 		}
 		.overlay {
 			opacity: 1;
@@ -173,7 +196,9 @@
 			text-decoration: none;
 			
 			p {
-				font-size: 25px;	
+				font-size: 25px;
+				$primary-font: 'poppins';	
+				$color-text: #000;
 			}
 			.iconos-contenedor {
 				padding: 10px 20px;
@@ -237,7 +262,8 @@
 			width: 20%;
 			left: 28%;
 			top: 28%;
-			font-size: 33px;
+			font-size: 40px;
+			$color-text: #000;
 		}
 		&:hover {
 			img {
